@@ -1,0 +1,209 @@
+@model TodoApi.Models.TodoItem
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h2>Update</h2>
+
+<form asp-action="Update">
+    <div class="form-horizontal">
+        <h4>TodoItem</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <div class="checkbox">
+                    <input asp-for="IsComplete" />
+                    <label asp-for="IsComplete"></label>
+                </div>
+            </div>
+        </div>
+    <input type="hidden" asp-for="id" />
+        <div class="form-group">
+            <label asp-for="Nama" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Nama" class="form-control" />
+                <span asp-validation-for="Nama" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglOrderdItenoss" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TglOrderdItenoss" class="form-control" />
+                <span asp-validation-for="TglOrderdItenoss" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="KomentarTeknisi" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="KomentarTeknisi" class="form-control" />
+                <span asp-validation-for="KomentarTeknisi" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="AreaCode" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="AreaCode" class="form-control" />
+                <span asp-validation-for="AreaCode" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Metro" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Metro" class="form-control" />
+                <span asp-validation-for="Metro" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglPerintahSurvei" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TglPerintahSurvei" class="form-control" />
+                <span asp-validation-for="TglPerintahSurvei" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Tagging" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Tagging" class="form-control" />
+                <span asp-validation-for="Tagging" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TeknisiSurvei" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TeknisiSurvei" class="form-control" />
+                <span asp-validation-for="TeknisiSurvei" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TaggingOp" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TaggingOp" class="form-control" />
+                <span asp-validation-for="TaggingOp" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglPerintahPT1" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TglPerintahPT1" class="form-control" />
+                <span asp-validation-for="TglPerintahPT1" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglSelesai" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TglSelesai" class="form-control" />
+                <span asp-validation-for="TglSelesai" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TeknisiPT1" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TeknisiPT1" class="form-control" />
+                <span asp-validation-for="TeknisiPT1" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglPerintahJT" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TglPerintahJT" class="form-control" />
+                <span asp-validation-for="TglPerintahJT" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglJTSelesai" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TglJTSelesai" class="form-control" />
+                <span asp-validation-for="TglJTSelesai" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Komentar" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Komentar" class="form-control" />
+                <span asp-validation-for="Komentar" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglCloser" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="TglCloser" class="form-control" />
+                <span asp-validation-for="TglCloser" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Status" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Status" class="form-control" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sid" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sid" class="form-control" />
+                <span asp-validation-for="sid" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="tq" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="tq" class="form-control" />
+                <span asp-validation-for="tq" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="ao" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="ao" class="form-control" />
+                <span asp-validation-for="ao" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Alamat" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Alamat" class="form-control" />
+                <span asp-validation-for="Alamat" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Gpon" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Gpon" class="form-control" />
+                <span asp-validation-for="Gpon" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="sn" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="sn" class="form-control" />
+                <span asp-validation-for="sn" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="vlan" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="vlan" class="form-control" />
+                <span asp-validation-for="vlan" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="pic" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="pic" class="form-control" />
+                <span asp-validation-for="pic" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
